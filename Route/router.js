@@ -36,6 +36,9 @@ router.post('/EuserUpdate', userUpdate);
 const { userGet } = require('../Controller/userGet');
 router.get('/EuserGet', userGet);
 
+const productGet=require('../Controller/product_get_control');
+router.get('/productGet',productGet.fetchProducts)
+
 
 
 module.exports = router;
